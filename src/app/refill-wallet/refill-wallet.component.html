@@ -1,0 +1,17 @@
+<h2>Refill Wallet</h2>
+
+<div class="wallet-info">
+  <p>Current Balance: <strong>{{ currentBalance }}</strong></p>
+  <p>Maximum Limit Allowed: <strong>{{ maxLimit}}</strong></p>
+</div>
+
+<form (ngSubmit)="refill()" class="refill-form">
+  <label for="amount">Enter Amount to Refill:</label>
+  <input type="number" id="amount" [(ngModel)]="refillAmount" name="amount" min="1"
+    max="{{ maxLimit - currentBalance }}" required>
+  <button type="submit">Refill</button>
+</form>
+
+<nav class="nav-links">
+  <a routerLink="/dashboard">Back to Dashboard</a>
+</nav>

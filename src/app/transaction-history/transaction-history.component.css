@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+.nav-links {
+  text-align: center;
+  margin-top: 30px;
+}
+@media (max-width: 600px) {
+  table,
+  th,
+  td {
+    width: 100%;
+  }
+}
+
+/* Optional: add custom styles for better appearance */
+h2 {
+  font-weight: bold;
+}

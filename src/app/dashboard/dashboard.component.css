@@ -1,0 +1,56 @@
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.balance-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 8px;
+  text-align: center;
+}
+.balance {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.recent-transactions {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.positive {
+  color: green;
+}
+.negative {
+  color: red;
+}
+.nav-links {
+  text-align: center;
+  margin-top: 30px;
+}
+a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .balance-section,
+  .recent-transactions {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .nav-links a {
+    font-size: 13px;
+  }
+}

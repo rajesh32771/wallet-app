@@ -1,0 +1,26 @@
+<h2>Dashboard</h2>
+
+<div class="transactions">
+  <div class="balance-section">
+    <h3>Your Wallet Balance</h3>
+    <p class="balance">{{ walletBalance | currency }}</p>
+  </div>
+
+  <div class="recent-transactions">
+    <h3>Latest Transactions</h3>
+    <div *ngFor="let t of latestTransactions" class="transaction-item">
+      <div>
+        <strong>{{ t.description }}</strong> <br>
+        <small>{{ t.date }}</small>
+      </div>
+      <div [ngClass]="{'positive': t.amount >= 0, 'negative': t.amount < 0}">
+        {{ t.amount | currency }}
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="nav-links">
+  <a routerLink="/transactions">View All Transactions</a> |
+  <a routerLink="/refill-wallet">Add Money</a> |
+  <a routerLink="/scan-qa">Scan QR</a>
+</nav>

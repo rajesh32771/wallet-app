@@ -1,0 +1,20 @@
+h2 {
+  text-align: center;
+}
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 8px;
+  width: 80%;
+}
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+}
+@media (max-width: 600px) {
+  input,
+  button {
+    width: 90%;
+  }
+}

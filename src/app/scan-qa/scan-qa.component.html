@@ -1,0 +1,16 @@
+<h2>Scan QR Code</h2>
+
+<div class="scan-container">
+  <div class="qr-placeholder">
+    <p>QR Code Scanner Placeholder</p>
+    <button (click)="scanCode()">Simulate Scan</button>
+  </div>
+  <div *ngIf="scannedCode" class="result-section">
+    <h3>Scanned Code:</h3>
+    <p class="code">{{ scannedCode }}</p>
+  </div>
+</div>
+
+<nav class="nav-links">
+  <a routerLink="/dashboard">Back to Dashboard</a>
+</nav>
