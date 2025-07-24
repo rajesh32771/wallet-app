@@ -1,8 +1,8 @@
 <h2>Refill Wallet</h2>
 
 <div class="wallet-info">
-  <p>Current Balance: <strong>{{ currentBalance }}</strong></p>
-  <p>Maximum Limit Allowed: <strong>{{ maxLimit}}</strong></p>
+  <p>Current Balance: <strong>{{ currentBalance | currency :"INR" }}</strong></p>
+  <p>Maximum Limit Allowed: <strong>{{ maxLimit | currency :"INR" }}</strong></p>
 </div>
 
 <form (ngSubmit)="refill()" class="refill-form">

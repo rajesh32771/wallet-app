@@ -3,7 +3,7 @@
 <div class="transactions">
   <div class="balance-section">
     <h3>Your Wallet Balance</h3>
-    <p class="balance">{{ walletBalance | currency }}</p>
+    <p class="balance">{{ walletBalance | currency :"INR" }}</p>
   </div>
 
   <div class="recent-transactions">
@@ -14,7 +14,7 @@
         <small>{{ t.date }}</small>
       </div>
       <div [ngClass]="{'positive': t.amount >= 0, 'negative': t.amount < 0}">
-        {{ t.amount | currency }}
+        {{ t.amount | currency :"INR" }}
       </div>
     </div>
   </div>

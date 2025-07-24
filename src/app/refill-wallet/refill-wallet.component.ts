@@ -7,8 +7,8 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./refill-wallet.component.css'],
 })
 export class RefillWalletComponent {
-  currentBalance: number = 1250.75; // Example current balance
-  maxLimit: number = 5000; // Max allowed refill limit
+  currentBalance: number = 500; // Example current balance
+  maxLimit: number = 2000; // Max allowed refill limit
   refillAmount: number | null = null;
 
   // Optional: You can add a method to handle form submission

@@ -3,7 +3,7 @@ h2 {
   margin-top: 20px;
 }
 .balance-section {
-  background-color: #f0f0f0;
+   background: linear-gradient(45deg, #4facfe, #00f2fe);
   padding: 20px;
   max-width: 400px;
   margin: 20px auto;
@@ -44,6 +44,18 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.balance-card {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  border-radius: 15px;
+  color: #fff;
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   .balance-section,
   .recent-transactions {
@@ -54,3 +66,5 @@ a:hover {
     font-size: 13px;
   }
 }
+
+

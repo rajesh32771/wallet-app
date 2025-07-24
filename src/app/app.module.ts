@@ -10,6 +10,7 @@ import { ScanQaComponent } from './scan-qa/scan-qa.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RefillWalletComponent } from './refill-wallet/refill-wallet.component';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { RefillWalletComponent } from './refill-wallet/refill-wallet.component';
     ScanQaComponent,
     RefillWalletComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ZXingScannerModule],
   providers: [],
   bootstrap: [AppComponent],
 })

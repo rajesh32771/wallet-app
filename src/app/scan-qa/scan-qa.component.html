@@ -2,8 +2,9 @@
 
 <div class="scan-container">
   <div class="qr-placeholder">
-    <p>QR Code Scanner Placeholder</p>
-    <button (click)="scanCode()">Simulate Scan</button>
+    <!-- <p>QR Code Scanner Placeholder</p> -->
+    <img src="../../assets/scan_me_qr_code.png" alt="QR Scanner" class="qr-image" />
+    <!-- <button (click)="scanCode()">Simulate Scan</button> -->
   </div>
   <div *ngIf="scannedCode" class="result-section">
     <h3>Scanned Code:</h3>

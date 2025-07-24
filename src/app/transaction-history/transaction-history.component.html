@@ -8,7 +8,7 @@
   <tr *ngFor="let t of pagedTransactions">
     <td>{{t.id}}</td>
     <td>{{t.description}}</td>
-    <td>{{t.amount | currency}}</td>
+    <td>{{t.amount | currency :"INR" }}</td>
   </tr>
 </table>
 <div class="pagination">
